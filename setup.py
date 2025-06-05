@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='lunar_calendar',
+    name='chinese_lunar_calendar_converter',
     version='0.1.0',
     author='VerNe', # 请替换为您的名字
     author_email='yuu_seeing@foxmail.com', # 请替换为您的邮箱

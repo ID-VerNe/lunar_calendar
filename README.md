@@ -1,13 +1,13 @@
-# lunar_calendar
+# chinese_lunar_calendar_converter
 
-`lunar_calendar` 是一个用于公历和农历之间相互转换的 Python 包，并提供万年历打印功能。
+`chinese_lunar_calendar_converter` 是一个用于公历和农历之间相互转换的 Python 包，并提供万年历打印功能。
 
 ## 安装
 
-您可以通过 pip 安装 `lunar_calendar`：
+您可以通过 pip 安装 `chinese_lunar_calendar_converter`：
 
 ```bash
-pip install lunar_calendar
+pip install chinese_lunar_calendar_converter
 ```
 
 ## 使用示例
@@ -15,7 +15,7 @@ pip install lunar_calendar
 ### 公历转农历
 
 ```python
-from lunar_calendar import solar_to_lunar
+from chinese_lunar_calendar_converter import solar_to_lunar
 
 gregorian_date = "2025-01-29"
 lunar_info = solar_to_lunar(gregorian_date)
@@ -26,7 +26,7 @@ print(f"{gregorian_date} 为农历：{lunar_info[0]}年 {lunar_info[1]}月 {luna
 ### 农历转公历
 
 ```python
-from lunar_calendar import lunar_to_solar
+from chinese_lunar_calendar_converter import lunar_to_solar
 
 lunar_year = 2025 # 农历年份
 lunar_date_str = "正月初一"
@@ -38,7 +38,7 @@ print(f"农历{lunar_year}年{lunar_date_str} 为公历：{gregorian_info[0]}-{g
 ### 打印万年历
 
 ```python
-from lunar_calendar import print_perpetual_calendar
+from chinese_lunar_calendar_converter import print_perpetual_calendar
 
 # 打印2024年全年日历
 print_perpetual_calendar(2024)
